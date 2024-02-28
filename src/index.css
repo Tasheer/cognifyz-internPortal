@@ -1,13 +1,171 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+    margin: 2rem 0rem 0rem 3rem;
+}
+
+/* Navbar */
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav > div:nth-child(2n+1){
+    cursor: pointer;
+    padding: 0.6rem;
+    background-color: rgb(236, 232, 232);
+    border-radius: 4px;
+}
+
+.nav > div:nth-child(2n+1):hover{
+    transition: 0.5s ease-in-out;
+    color: white;
+    background: linear-gradient(to right, #4548f7, #fc0afc);
+}
+
+.apply button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: large;
+    padding: 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to right, #4548f7, #fc0afc);
+    gap: 0.5rem;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.apply button:hover{
+    padding: 1.5rem;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(to right,  #fc0afc,#4548f7);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Home */
+
+.home > p{
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro div{
+    font-size: larger;
+}
+
+.perks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.perks div{
+    font-size: large;
+}
+
+.alignment{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.learn-btn{
+    margin-top: 2rem;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(to right, #4548f7, #fc0afc);
+    cursor: pointer;
+}
+
+.learn-btn:hover{
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(to right,  #fc0afc,#4548f7);
+}
+
+.learn > div{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    background-image: url('/public/bg-img.jpg');
+    background-size: cover; 
+    background-position: center;
+    min-height: 60vh;
+    padding: 4rem;
+}
+
+.footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.footer > div > div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: larger;
+}
+
+.footer button{
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(to right, #4548f7, #fc0afc);
+    cursor: pointer;
+}
+
+.footer button:hover{
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(to right,  #fc0afc,#4548f7);
 }
